@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: rgb(60, 124, 154);
+    position: sticky;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 620px) {
+    .gridnav {
+        display: grid;
+        justify-content: start;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .logoimg {
+        width: 1.5rem;
+        padding-top: 0.2rem;
+    }
+
+    .logo {
+        display: none
+    }
+
+    .gridbut {
+        text-align: left;
+        font-size: 0.9rem;
+        color: rgb(224, 247, 248);
+        padding: 0.4rem;
+    }
+
+    .textoizq {
+        position: absolute;
+        font-size: 1.7rem;
+        top: 2rem;
+        left: 5rem;
+    }
+
+    .imgizq {
+        position: absolute;
+        width: 6rem;
+        top: 0.6rem;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .gridnav {
+        display: grid;
+        justify-content: start;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logoimg {
+        width: 2rem;
+    }
+
+    .logo {
+        text-align: left;
+        font-size: 1.6rem;
+        color: rgb(224, 247, 248);
+    }
+
+    .gridbut {
+        text-align: left;
+        font-size: 1.1rem;
+        color: rgb(224, 247, 248);
+        padding: 0.4rem;
+    }
+
+    .textoizq {
+        position: absolute;
+        font-size: 2rem;
+        top: 3rem;
+        left: 6rem;
+    }
+
+    .imgizq {
+        position: absolute;
+        width: 7rem;
+        top: 1.3rem;
+        left: 0;
+    }
+}
+
+.gridbut:hover {
+    color: black
+}
+
+.fondo {
+    width: 100%;
+}
+
+.fondocont {
+    position: relative;
+    text-align: left;
+    color: rgb(17, 37, 44);
+}
+
+footer {
+    background-color: rgb(60, 124, 154);
+    ;
+}
