@@ -1,5 +1,6 @@
 API pronóstico: http://api.openweathermap.org/data/2.5/forecast?lat=-54.8069332&lon=-68.3073246&appid=93d103a37e1b14cac3c1c30ab6afa977
-Color de la marca: #3c7c9a / 60, 124, 154
+Color base: #3c7c9a / 60, 124, 154
+Color oscuro: #11252C / 17, 37, 44
 Color claro: #e0f7f8 / 224, 247, 248
 
 Hotel Los Ñires

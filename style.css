@@ -7,7 +7,6 @@
 
 nav {
     background-color: rgb(60, 124, 154);
-    position: sticky;
 }
 
 a {
@@ -44,6 +43,22 @@ a {
         font-size: 1.7rem;
         top: 2rem;
         left: 5rem;
+    }
+
+    .textoder {
+        position: absolute;
+        font-size: 1.7rem;
+        top: 2rem;
+        right: 2rem;
+        text-align: right;
+    }
+
+    .textoderch {
+        position: absolute;
+        font-size: 1rem;
+        top: 6.5rem;
+        right: 2rem;
+        text-align: right;
     }
 
     .imgizq {
@@ -87,6 +102,22 @@ a {
         left: 6rem;
     }
 
+    .textoder {
+        position: absolute;
+        font-size: 2rem;
+        top: 3rem;
+        right: 2rem;
+        text-align: right;
+    }
+
+    .textoderch {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 8rem;
+        right: 2rem;
+        text-align: right;
+    }
+
     .imgizq {
         position: absolute;
         width: 7rem;
@@ -96,11 +127,12 @@ a {
 }
 
 .gridbut:hover {
-    color: black
+    color: rgb(17, 37, 44)
 }
 
 .fondo {
     width: 100%;
+    margin-bottom: -4px;
 }
 
 .fondocont {
@@ -111,5 +143,5 @@ a {
 
 footer {
     background-color: rgb(60, 124, 154);
-    ;
+    color: rgb(224, 247, 248);
 }
