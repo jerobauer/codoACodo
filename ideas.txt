@@ -3,6 +3,8 @@ Color base: #3c7c9a / 60, 124, 154
 Color oscuro: #11252C / 17, 37, 44
 Color claro: #e0f7f8 / 224, 247, 248
 
-Hotel Los Ñires
-Ubicado sobre la costa del Canal Beagle
-Ushuaia, Tierra del Fuego, Argentina
+Páginas:
+- index: dos imágenes con texto, servicios, datos grales
+- habitaciones: tarjetas con imagenes y descripción, esta es la página con la que más podemos editar los cortes para 3 anchos de pantalla
+- ubicación: con iframe a Google Maps
+- contacto: logos con número, mail y redes, y formulario con validación en JS
