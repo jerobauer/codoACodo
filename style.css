@@ -145,3 +145,156 @@ footer {
     background-color: rgb(60, 124, 154);
     color: rgb(224, 247, 248);
 }
+
+.titulo {
+    font-size: 1.5rem;
+    padding: 1.5rem 10% 1.5rem 10%;
+    color: rgb(17, 37, 44);
+}
+
+.formcont {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1200px));
+    grid-gap: 0.8rem;
+    background-color: rgb(242, 242, 242);
+    padding: 2rem;
+    border-radius: 0.3rem;
+
+}
+
+label {
+    display: block;
+    color: rgb(17, 37, 44);
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid rgb(17, 37, 44);
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgb(60, 124, 154);
+    color: rgb(224, 247, 248);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(17, 37, 44);
+}
+
+.imgsoc {
+    width: 2.5rem;
+    margin: 1rem
+}
+
+.texto {
+    font-size: 1.2rem;
+    color: rgb(17, 37, 44);
+}
+
+.contacto {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+}
+
+.contacto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: rgb(17, 37, 44);
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: rgb(17, 37, 44);
+}
+
+.contacto-item img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.contacto-item span {
+    font-size: 1rem;
+}
+
+@media (min-width: 769px) {
+    .contacto-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 5px;
+    }
+
+    .contacto-item {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 768px) {
+    .contacto-contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 620px) {
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+
+    .contacto-item {
+        margin: 10px 0;
+    }
+}
+
+.ubicont {
+    width: 80%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1200px));
+    background-color: rgb(242, 242, 242);
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.direccion {
+    padding: 20px;
+    text-align: left;
+    width: 300px;
+    font-size: 1.2rem;
+    color: rgb(17, 37, 44);
+}
+
+.mapa {
+    padding: 0 20px 20px 20px;;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-radius: 0.3rem;
+}

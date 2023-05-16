@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +35,91 @@
             </div>
         </nav>
     </header>
-    
+    <main>
+        <div class="titulo">Formulario de contacto</div>
+        <div class="formcont">
+            <form>
+                <label for="nombre">Nombre*:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido*:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="telefono">Teléfono*:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+54 911 1234 5678" required>
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais">
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+
+                <label for="consulta">Consulta*:</label>
+                <select id="consulta" name="consulta" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="reserva">Reserva</option>
+                    <option value="quejas">Quejas y sugerencias</option>
+                    <option value="informacion">Información general</option>
+                </select>
+
+                <label for="asunto">Asunto*:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje*:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" onclick="return validarFormulario()">Enviar</button>
+            </form>
+        </div>
+        <div class="titulo">Información de contacto</div>
+        <section class="contacto">
+            <div class="contacto-contenedor">
+                <div class="contacto-item">
+                    <img src="./Img/contacto/logo_tel.svg" alt="Teléfono">
+                    <span>
+                        <a href="tel:+54-92901568668" target="_blank">+54-92901568668</a>
+                    </span>
+                </div>
+                <div class="contacto-item">
+                    <img src="./Img/contacto/logo_wa.svg" alt="WhatsApp">
+                    <span>
+                        <a href="https://wa.me/5492901556854" target="_blank">+54-92901556854</a>
+                    </span>
+                </div>
+                <div class="contacto-item">
+                    <img src="./Img/contacto/logo_email.svg" alt="Email">
+                    <span>
+                        <a href="mailto:reservas@losnireshotel.com.ar" target="_blank">reservas@losnireshotel.com.ar</a>
+                    </span>
+                </div>
+                <div class="contacto-item">
+                    <img src="./Img/contacto/logo_ig.svg" alt="Instagram">
+                    <span>
+                        <a href="https://www.instagram.com/losnireshotel" target="_blank">@losnireshotel</a>
+                    </span>
+                </div>
+                <div class="contacto-item">
+                    <img src="./Img/contacto/logo_fb.svg" alt="Facebook">
+                    <span>
+                        <a href="https://www.facebook.com/LosNiresHotel/" target="_blank">Los Ñires Hotel</a>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <br>
+        <h4>Hotel Los Ñires</h4>
+        <h4>Av. los Nires 3040</h4>
+        <h4>V9410 Ushuaia, Tierra del Fuego</h4>
+        <br>
+    </footer>
+<script src="./main.js"></script>
 </body>
+
 </html>
