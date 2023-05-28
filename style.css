@@ -142,6 +142,9 @@ a {
 }
 
 footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     background-color: rgb(60, 124, 154);
     color: rgb(224, 247, 248);
 }
@@ -273,7 +276,7 @@ button[type="submit"]:hover {
 .ubicont {
     width: 80%;
     margin: 0 auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1200px));
     background-color: rgb(242, 242, 242);
     border-radius: 0.3rem;
@@ -289,7 +292,8 @@ button[type="submit"]:hover {
 }
 
 .mapa {
-    padding: 0 20px 20px 20px;;
+    padding: 0 20px 20px 20px;
+    ;
 }
 
 .mapa iframe {
@@ -297,4 +301,198 @@ button[type="submit"]:hover {
     height: 500px;
     border: 0;
     border-radius: 0.3rem;
+}
+
+.info-hotel {
+    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: end;
+}
+
+.info-hotel p {
+    padding-top: 1em;
+    padding-left: 2em;
+    width: 20em;
+}
+
+
+.contacto-footer {
+    width: 80%;
+    padding: .5em 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.contacto-item-footer {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: rgb(17, 37, 44);
+}
+
+.contacto-item-footer img {
+    width: 30px;
+    color: aliceblue;
+    /* margin-right: 5px; */
+}
+
+.contacto-item-footer span {
+    font-size: 1rem;
+    padding-left: .5em;
+    font-weight: bold;
+    color: #f2f2f2;
+    width: 20em;
+}
+
+.contacto-item-footer span a {
+    font-size: 1rem;
+    color: #f2f2f2;
+    width: 20em;
+}
+
+.contacto-item-footer span a:link {
+    color: #4cc731;
+}
+
+
+
+/* ----------------carousel-------------------------------------- */
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide.active {
+    transform: translateX(0%);
+}
+
+.slide.next {
+    transform: translateX(100%);
+}
+
+.slide.prev {
+    transform: translateX(-100%);
+}
+
+.slide img {
+    width: 100%;
+    height: 900px;
+    max-height: 900px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next:hover {
+    cursor: pointer;
+    user-select: none;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+
+
+/* ---habitaciones------ */
+
+.habitacion-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.habitacion-item {
+    position: relative;
+    /* border:1px solid black; */
+
+    border-radius: 5px;
+}
+
+.habitacion-item img {
+    width: 450px;
+    height: 400px;
+}
+
+.habitacion-item-info {
+    background-color: #000;
+    opacity: .5;
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 1.2em;
+    font-weight: bold;
+    top: 2em;
+    left: 1em;
+    text-align: left;
+}
+
+.habitacion-item-descripcion {
+    background-color: #000;
+    /* opacity: .4; */
+    position: absolute;
+    color: #f2f2f2;
+    width: 20em;
+    font-size: .8em;
+    font-weight: bold;
+    top: 2em;
+    left: 1em;
+    text-align: left;
+
+}
+
+.habitacion-item:hover {
+    z-index: 20;
+    visibility: true;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-item {
+    animation: fade-in 3s;
 }

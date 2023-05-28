@@ -65,3 +65,36 @@ function validarFormulario() {
 
     return true;
 }
+
+var slideIndex = 0;
+var slides = document.querySelectorAll(".slide");
+
+function showSlide(n) {
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } else if (n < 0) {
+        slideIndex = slides.length - 1;
+    } else {
+        slideIndex = n;
+    }
+
+    slides.forEach(function (slide) {
+        slide.classList.remove("active");
+        slide.classList.remove("next");
+        slide.classList.remove("prev");
+    });
+
+    slides[slideIndex].classList.add("active");
+    slides[(slideIndex + 1) % slides.length].classList.add("next");
+    slides[(slideIndex - 1 + slides.length) % slides.length].classList.add("prev");
+}
+
+function nextSlide() {
+    showSlide(slideIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(slideIndex - 1);
+}
+
+showSlide(slideIndex);

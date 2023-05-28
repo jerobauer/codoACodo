@@ -37,24 +37,74 @@
     </header>
     <main>
         <div class="fondocont">
-            <img class="fondo" src="./Img/gral/gral_09.png" alt="Hotel y montañas de fondo">
-            <img class="imgizq" src="./Img/logo/hoja_orscuro.png" alt="Logo">
-            <div class="textoizq">LOS ÑIRES<br>Tu hotel en el fin del mundo</div>
+            <img class="fondo fade-in-item" src="./Img/gral/gral_09.png" alt="Hotel y montañas de fondo">
+            <img class="imgizq fade-in-item" src="./Img/logo/hoja_orscuro.png" alt="Logo">
+            <div class="textoizq fade-in-item">LOS ÑIRES<br>Tu hotel en el fin del mundo</div>
         </div>
         <div class="fondocont">
-            <img class="fondo" src="./Img/gral/gral_19.png" alt="Casas al Canal Beagle y montañas">
-            <div class="textoder">Ubicado sobre la costa<br>del Canal Beagle<br></div>
-            <div class="textoderch">Ushuaia, Tierra del Fuego, Argentina</div>
+            <img class="fondo fade-in-item" src="./Img/gral/gral_19.png" alt="Casas al Canal Beagle y montañas">
+            <div class="textoder fade-in-item">Ubicado sobre la costa<br>del Canal Beagle<br></div>
+            <div class="textoderch fade-in-item">Ushuaia, Tierra del Fuego, Argentina</div>
         </div>
+        <div class="titulo">Galería</div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="slide active">
+                    <img src="./Img/gral/gral_09.jpg" alt="Imagen 1">
+                </div>
+                <div class="slide next">
+                    <img src="./Img/gral/gral_19.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide pre">
+                    <img src="./Img/gral/gral_18.jpg" alt="Imagen 3">
+                </div>
 
+            </div>
+            <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
+            <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
+        </div>
     </main>
     <footer>
-        <br>
-        <h4>Hotel Los Ñires</h4>
-        <h4>Av. los Nires 3040</h4>
-        <h4>V9410 Ushuaia, Tierra del Fuego</h4>
-        <br>
+        <section class="contacto-footer">
+
+            <div class="contacto-item-footer">
+                <img src="./Img/contacto/logo_tel.svg" alt="Teléfono">
+                <span>
+                    <a href="tel:+54-92901568668" target="_blank">+54-92901568668</a>
+                </span>
+            </div>
+            <div class="contacto-item-footer">
+                <img src="./Img/contacto/logo_wa.svg" alt="WhatsApp">
+                <span>
+                    <a href="https://wa.me/5492901556854" target="_blank">+54-92901556854</a>
+                </span>
+            </div>
+            <div class="contacto-item-footer">
+                <img src="./Img/contacto/logo_email.svg" alt="Email">
+                <span>
+                    <a href="mailto:reservas@losnireshotel.com.ar" target="_blank">reservas@losnireshotel.com.ar</a>
+                </span>
+            </div>
+            <div class="contacto-item-footer">
+                <img src="./Img/contacto/logo_ig.svg" alt="Instagram">
+                <span>
+                    <a href="https://www.instagram.com/losnireshotel" target="_blank">@losnireshotel</a>
+                </span>
+            </div>
+            <div class="contacto-item-footer">
+                <img src="./Img/contacto/logo_fb.svg" alt="Facebook">
+                <span>
+                    <a href="https://www.facebook.com/LosNiresHotel/" target="_blank">Los Ñires Hotel</a>
+                </span>
+            </div>
+        </section>
+        <div class="info-hotel">
+            <p>Hotel Los Ñires</p>
+            <p>Av. los Nires 3040</p>
+            <p>V9410 Ushuaia, Tierra del Fuego</p>
+        </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
