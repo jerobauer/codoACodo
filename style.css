@@ -433,7 +433,7 @@ button[type="submit"]:hover {
 .habitacion-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: start;
+    justify-content:space-around;
     align-items: center;
 }
 
@@ -445,8 +445,8 @@ button[type="submit"]:hover {
 }
 
 .habitacion-item img {
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 300px;
 }
 
 .habitacion-item-info {
